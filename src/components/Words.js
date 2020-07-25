@@ -16,6 +16,19 @@ var programming_languages = [
   "fortran"
 ]
 
+// var round1Words =  [
+
+// ]
+
+
+// var round2Words =  [
+  
+// ]
+
+// var round3Words =  [
+  
+// ]
+
 function randomWord() {
   return programming_languages[Math.floor(Math.random() * programming_languages.length)]
 }

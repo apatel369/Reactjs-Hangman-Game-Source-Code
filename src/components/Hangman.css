@@ -1,4 +1,63 @@
 .Hangman {
-  width: 80%;
-  margin-top: 50px;
+  width: 100%;
+  margin: 50px auto;
+    padding: 30px;
+    background: #eee;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.40);
+}
+
+.letter {
+  font-size: 30px;
+  font-weight: bold;
+  height: 30px;
+  margin: 35px;
+  text-align: center;
+  color: chocolate;
+}
+
+.l {
+  box-shadow: 0 3px 0 -1px #555;
+  display: inline-block;
+  margin: 1px;
+  text-transform: uppercase;
+  width: 20px;
+}
+
+.alert {
+  border: 1px solid blue;
+  /* text-shadow: 1px 1px 2px gray, 0 0 25px blue, 0 0 5px red; */
+  animation-name: anim;
+  animation-duration: 10s;
+  font-size: 20px;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: dimgray;
+}
+
+/* @keyframes anim {
+    0% {transform: rotate(0deg);left:0px;}
+    25% {transform: rotate(20deg);left:0px;}
+    50% {transform: rotate(0deg);left:500px;}
+    55% {transform: rotate(0deg);left:500px;}
+    70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+    100% {transform: rotate(-360deg);left:0px;}
+} */
+
+.sketch-font {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: xxx-large;
+  color: darkgreen;
+}
+/* 
+.btn-primary {
+  background-color: rgb(0, 83, 139);
+} */
+
+.btn-warning {
+  background-color: #343a4021;
+  border-color: red;
 }
