@@ -53,9 +53,9 @@ class Hangman extends Component {
       mistake: st.mistake + (st.answer.includes(letter) ? 0 : 1)
     }));
   }
-
+////#region
   guessedWord() {
-    return this.state.answer.split("").map((letter, index) => {
+    return this.state.answer.split("").map((letter) => {
      return (this.state.guessed.has(letter) ? letter : " _ ")
     })
   }
@@ -94,7 +94,7 @@ class Hangman extends Component {
     maxWrong: maxWrong});
   
   }
-
+//#endregion
   render() {
     const gameOver = this.state.mistake >= this.state.maxWrong;
     const isWinner = this.guessedWord().join("") === this.state.answer;
@@ -110,7 +110,7 @@ class Hangman extends Component {
 
     return (
       <div className="Hangman container">
-        <h4 className='text-center sketch-font'>Save the man{console.log("current Round ", this.state.currentRound, " current Word ", this.state.answer)}</h4>
+        <h4 className='text-center sketch-font'>Save the Man{console.log("current Round ", this.state.currentRound, " current Word ", this.state.answer)}</h4>
         <div className="float-right" style={{fontStyle: "italic"}}>Wrong Guesses: <span style={{color: "red"}}>{this.state.mistake}</span> of {this.state.maxWrong}</div>
         
     {/* <div className="float-right">{this.state.currentRound}</div> */}
